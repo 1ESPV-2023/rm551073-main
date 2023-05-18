@@ -4,28 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="./js/login.js" defer></script>
     <title>ENTRAR</title>
 </head>
 <body>
+
+    <div id="msg"></div>
 
     <div>
         <form action="index.html" method="get" onsubmit="return false">
             <fieldset>
                 <legend>ENTRAR</legend>
                 <div>
-                    <label for="idNm">Usuário</label>
-                    <input type="text" name="txtNm" id="idNm" placeholder="Usuário">
+                    <label for="idUsuario">Usuário</label>
+                    <input type="text" name="txtUsuario" id="idUsuario" placeholder="Usuário">
                 </div>
                 <div>
-                    <label for="idPass">Senha</label>
-                    <input type="password" name="txtPass" id="idPass" placeholder="Senha">
+                    <label for="idSenha">Senha</label>
+                    <input type="password" name="txtSenha" id="idSenha" placeholder="Senha">
                     <i class="fa fa-eye" aria-hidden="true"></i>
                 </div>
                 <div>
-                    <button type="button">Entrar</button>
+                    <button type="submit" id="btnSubmit">Entrar</button>
                 </div>
             </fieldset>
         </form>
     </div>
+
 </body>
 </html>
